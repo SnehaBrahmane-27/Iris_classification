@@ -27,11 +27,6 @@ model.fit(x_train,y_train)
 y_pred = model.predict(x_test)
 acc = accuracy_score(y_test,y_pred)
 
-report = classification_report(y_test, y_pred, target_names=le.classes_)
-print("Classification Report:\n", report)
-
-
-
 st.title ('🌸 Iris Flower Classification')
 st.write (f"**Model Accuracy :** {acc:.2f}")
 
